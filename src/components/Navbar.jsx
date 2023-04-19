@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import {
+  AiFillTag,
+  AiOutlineClose,
   AiOutlineMenu,
   AiOutlineSearch,
-  AiOutlineClose,
-  AiFillTag,
 } from "react-icons/ai";
 import { BsFillCartFill, BsFillSaveFill } from "react-icons/bs";
-import { TbTruckDelivery } from "react-icons/tb";
+import { FaUserFriends, FaWallet } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
-import { FaWallet, FaUserFriends } from "react-icons/fa";
+import { TbTruckDelivery } from "react-icons/tb";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -29,16 +29,7 @@ const Navbar = () => {
           <p className="p-2">Pickup</p>
         </div>
       </div>
-
-      <div className="bg-gray-200 w-[200px] rounded-full flex items-center px-2 sm:w-[400px] lg:w-[500px]">
-        <AiOutlineSearch size={20} />
-        <input
-          className="bg-transparent w-full p-2 focus:outline-none"
-          type="text"
-          placeholder="Search foods..."
-        />
-      </div>
-
+      
       <button className="bg-black text-white rounded-full uppercase hidden md:flex items-center py-2">
         <BsFillCartFill className="mr-2" size={20} />
         Order
